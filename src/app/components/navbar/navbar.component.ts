@@ -1,4 +1,4 @@
-import { Component, EventEmitter, input, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ItemCard } from '../../models/itemCart';
 import { RouterModule } from '@angular/router';
 
@@ -10,7 +10,6 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent {
   @Input() items: ItemCard[] = [];
-  @Input() total!: number;
   // @Output() openCartEventEmitter = new EventEmitter;
 
   // openCart(): void {
